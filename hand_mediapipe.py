@@ -2,20 +2,8 @@ import cv2
 import math
 import numpy as np
 import os
-DESIRED_HEIGHT = 456
-DESIRED_WIDTH = 256
-def resize_and_show(image):
-  h, w = image.shape[:2]
-  print(f'height: {h}, width: {w}')
-  if h < w:
-      img = cv2.resize(image, (DESIRED_WIDTH, math.floor(h/(w/DESIRED_WIDTH))))
-  else:
-    img = cv2.resize(image, (math.floor(w/(h/DESIRED_HEIGHT)), DESIRED_HEIGHT))
-  cv2.imshow('img',img)
 
 # Read images with OpenCV.
-
-
 
 import mediapipe as mp
 mp_hands = mp.solutions.hands
@@ -23,7 +11,6 @@ mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
 # help(mp_hands.Hands)
 
-data_path = "/home/luohwu/Thesis_workspace/dataset/P01_11"
 
 # for index in range(1, 31000, 60):
 #   image_index = str(index).zfill(10)
