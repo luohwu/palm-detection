@@ -10,3 +10,5 @@ Modify the outputs in : `xxx/mediapipe/python/solutions/hands`:
             'multi_handedness','palm_detections'
         ])
         `
+
+![example](https://github.com/luohwu/palm-detection/blob/main/sample.png)
