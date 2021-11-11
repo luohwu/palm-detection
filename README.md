@@ -2,9 +2,10 @@
 
 Based on mediapipe. 
 
-`xxx/mediapipe/python/solutions/hands`:
+Modify the outputs in : `xxx/mediapipe/python/solutions/hands`:
+<br />
 `
-        outputs=[
+        Hands.__init__() -> outputs=[
             'multi_hand_landmarks', 'multi_hand_world_landmarks',
             'multi_handedness','palm_detections'
         ])
